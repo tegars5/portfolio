@@ -95,3 +95,46 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+/* ----- ANIMASI UNTUK SKILLS WRAPPER ----- */
+
+sr.reveal(".skills-wrapper", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1500,
+  delay: 100,
+});
+
+sr.reveal(".skills-category", {
+  origin: "bottom",
+  distance: "30px",
+  duration: 1200,
+  interval: 150,
+});
+
+sr.reveal(".skills-list span", {
+  origin: "bottom",
+  distance: "20px",
+  duration: 800,
+  interval: 50,
+  delay: 300,
+});
+
+srRight.reveal(".skills-wrapper", {
+  delay: 150,
+});
+
+srRight.reveal(".skills-category", {
+  interval: 200,
+  delay: 200,
+});
+
+srLeft.reveal(".skills-category:nth-child(odd)", {
+  delay: 100,
+  interval: 300,
+});
+
+srRight.reveal(".skills-category:nth-child(even)", {
+  delay: 200,
+  interval: 300,
+});
